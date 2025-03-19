@@ -1,0 +1,48 @@
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juego de Sudoku</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Sudoku</h1>
+    
+    <div class="stats">
+      <span id="points">Puntos: 100</span>
+    </div>
+    
+    <div class="controls">
+      <button id="newGame">Nueva Partida</button>
+      <button id="newPuzzle">Nuevo Sudoku</button>
+      <select id="difficulty">
+        <option value="easy">Fácil</option>
+        <option value="medium">Medio</option>
+        <option value="hard">Difícil</option>
+      </select>
+      <button id="check">Comprobar Solución</button>
+      <button id="hint">Pista (-10 pts)</button>
+      <button id="solve">Resolver</button>
+    </div>
+
+    <div class="board" id="board"></div>
+
+    <div class="numpad">
+      <button class="num-btn" data-num="1">1</button>
+      <button class="num-btn" data-num="2">2</button>
+      <button class="num-btn" data-num="3">3</button>
+      <button class="num-btn" data-num="4">4</button>
+      <button class="num-btn" data-num="5">5</button>
+      <button class="num-btn" data-num="6">6</button>
+      <button class="num-btn" data-num="7">7</button>
+      <button class="num-btn" data-num="8">8</button>
+      <button class="num-btn" data-num="9">9</button>
+      <button class="num-btn" data-num="0">Borrar</button>
+    </div>
+
+    <div id="message"></div>
+  </div>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
