@@ -14,6 +14,9 @@ const difficulties = {
 };
 
 function initializeGame() {
+  if (!confirm('¿Estás seguro que deseas iniciar una nueva partida?\nSe resetearán los puntos y el tablero.')) {
+    return;
+  }
   const difficulty = document.getElementById('difficulty').value;
   const emptyCells = difficulties[difficulty];
   const result = generateSudoku(emptyCells);
