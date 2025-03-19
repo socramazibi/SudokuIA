@@ -2,4 +2,5 @@
 SudokuIA
 
 
-https://socramazibi.github.io/SudokuIA/
+
+https://websim.ai/@Socram/juego-de-sudoku-2/5
